@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nevas_ss | Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">nevas<span>_ss</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Progetti</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">👋 Ciao, sono</p>
+                <h1 class="name">nevas_ss</h1>
+                <h2 class="typed-text">
+                    <span id="typed"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-desc">
+                    14enne appassionato di coding, editing e grafica. Gestisco community su Discord e Minecraft e sviluppo progetti in JS, Python e HTML.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Vedi i Progetti</a>
+                    <a href="#contact" class="btn btn-outline">Contattami</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="pfp-glow"></div>
+                <img src="pfp.jpg" alt="nevas_ss" id="profile-pic">
+                <div class="floating-badge badge-1">💻 Dev</div>
+                <div class="floating-badge badge-2">🎨 Editor</div>
+                <div class="floating-badge badge-3">⚙️ Manager</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">Chi Sono</h2>
+            <p class="section-subtitle">Un po' di me</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>Developer</h3>
+                    <p>Programmo da un anno in <strong>JavaScript</strong>, <strong>Python</strong> e <strong>HTML/CSS</strong>. Amo creare bot Discord, siti web e script utili.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🎨</div>
+                    <h3>Editor & Grafico</h3>
+                    <p>Realizzo grafiche, thumbnail, banner e contenuti editati per streamer e community. Attenzione ai dettagli e stile moderno.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🛡️</div>
+                    <h3>Server Manager</h3>
+                    <p>Ho gestito <strong>15 server Minecraft</strong> e <strong>25 server Discord</strong>, occupandomi di staff, plugin, bot e moderazione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Le Mie Skills</h2>
+            <p class="section-subtitle">Cosa so fare</p>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Python</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>HTML / CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Grafica (Photoshop/Canva)</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Gestione Server Discord</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Gestione Server Minecraft</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">I Miei Progetti</h2>
+            <p class="section-subtitle">Alcuni lavori</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">🤖</div>
+                    <h3>Bot Discord</h3>
+                    <p>Bot personalizzati con comandi, moderazione, economia e sistemi di ticket.</p>
+                    <div class="project-tags"><span>JS</span><span>Discord.js</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">⛏️</div>
+                    <h3>Plugin Minecraft</h3>
+                    <p>Sviluppo e configurazione di plugin per server Minecraft con sistemi custom.</p>
+                    <div class="project-tags"><span>Java</span><span>Spigot</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🌐</div>
+                    <h3>Siti Web</h3>
+                    <p>Landing page e siti personalizzati con design moderno e responsive.</p>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🎨</div>
+                    <h3>Grafiche & Thumbnail</h3>
+                    <p>Thumbnail YouTube, banner Discord e loghi personalizzati per community.</p>
+                    <div class="project-tags"><span>Photoshop</span><span>Canva</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🎬</div>
+                    <h3>Video Editing</h3>
+                    <p>Editing video per creator e montaggi dinamici con effetti e transizioni.</p>
+                    <div class="project-tags"><span>Premiere</span><span>CapCut</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">🛠️</div>
+                    <h3>Setup Server</h3>
+                    <p>Configurazione completa di server Discord e Minecraft da zero.</p>
+                    <div class="project-tags"><span>Setup</span><span>Gestione</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h2 class="counter" data-target="15">0</h2>
+                    <p>Server Minecraft Gestiti</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="counter" data-target="25">0</h2>
+                    <p>Server Discord Gestiti</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="counter" data-target="1">0</h2>
+                    <p>Anno di Programmazione</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="counter" data-target="14">0</h2>
+                    <p>Anni di Età</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contattami</h2>
+            <p class="section-subtitle">Parliamo del tuo progetto</p>
+            <div class="contact-box">
+                <p>Vuoi collaborare, hai bisogno di un sito, di una grafica o di gestire il tuo server? Scrivimi su Discord!</p>
+                <button class="discord-btn" onclick="copyDiscord()">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg>
+                    Copia Discord: nevas_ss
+                </button>
+                <p id="copy-message">✅ Nick copiato negli appunti!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 <strong>nevas_ss</strong> — Made with 💜 & Code</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
